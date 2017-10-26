@@ -1,8 +1,11 @@
 'use strict';
 
 function hybrid_operation(collection) {
-
-  //在这里写入代码
+  collection.unshift(0);
+  let result = collection.reduce((pre,cur)=>{
+    return pre + cur * 3 + 2
+  });
+  return result
 }
 
 module.exports = hybrid_operation;

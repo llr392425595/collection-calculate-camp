@@ -1,7 +1,14 @@
 'use strict';
 
-function calculate_elements_sum(collection, element) {
-  //在这里写入代码
+function find_element_last_subscript(collection, element) {
+  let arr = [];
+  collection.forEach((item,index)=>{
+    if(item === element){
+      arr.push(index);
+    }
+  });
+
+  return arr[arr.length-1];
 }
 
-module.exports = calculate_elements_sum;
+module.exports = find_element_last_subscript;
